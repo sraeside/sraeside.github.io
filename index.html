@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shauna Raeside's portfolio showcasing projects, skills, and contact information.">
+    <meta property="og:title" content="Shauna Raeside Portfolio">
+    <meta property="og:description" content="Junior Web Developer Portfolio">
+    <title>Shauna Raeside Junior Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ovo&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="page">
+
+    <!--header-->
+    <header class="header">
+        <nav class="header__nav" aria-label="Main navigation">
+            <img src="./images/secondary_logo.png" alt="logo" class="header__logo">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="#home" class="header__menu-link">Home</a></li>
+                <li class="header__menu-item"><a href="#about" class="header__menu-link">About</a></li>
+                <li class="header__menu-item"><a href="#projects" class="header__menu-link">Projects</a></li>
+                <li class="header__menu-item"><a href="#contact" class="header__menu-link">Contact</a></li>
+            </ul>
+    
+            <div class="header__actions">
+                <a href="#contact" class="button button--secondary header__contact-button">Contact</a>
+                <button class="header__menu-toggle" onclick="openMenu()">
+                    <img src="./images/mobile-menu.png" alt="Open mobile menu" class="header__menu-icon">
+                </button>
+            </div>
+        </nav> 
+
+        <!--mobile menu-->
+        <ul id="sidemenu" class="header__mobile-menu">
+            <div class="header__mobile-menu-close" onclick="closeMenu()">
+                <img src="./images/mobile-close.png" alt="Close mobile menu" class="header__mobile-menu-icon">
+            </div>
+            <li class="header__mobile-menu-item"><a href="#home" class="header__mobile-menu-link" onclick="closeMenu()">Home</a></li>
+            <li class="header__mobile-menu-item"><a href="#about" class="header__mobile-menu-link" onclick="closeMenu()">About</a></li>
+            <li class="header__mobile-menu-item"><a href="#projects" class="header__mobile-menu-link" onclick="closeMenu()">Projects</a></li>
+            <li class="header__mobile-menu-item"><a href="#contact" class="header__mobile-menu-link" onclick="closeMenu()">Contact</a></li>
+        </ul>
+    </header>
+
+    <!--main section-->    
+    <main class="main">
+        <!--hero section-->
+        <section class="hero">
+            <h3 class="hero__subtitle">shauna raeside</h3>
+            <h1 class="hero__title">frontend web developer</h1>
+            <p class="hero__description">I am a solutions-driven junior web developer with a scientific mind and a passion for finding order in chaos.</p>
+
+            <div class="hero__actions">
+                <a href="#contact" class="button button--primary">contact me 
+                    <img src="./images/arrow_icon.png" alt="arrow icon" class="button-icon">
+                </a>
+
+                <!--TODO: update href path to resume pdf-->
+                <a href="" class="button button--secondary" download>my resume 
+                    <img src="./images/download-icon.png" alt="download icon" class="button-icon">
+                </a>
+            </div>
+        </section>
+
+        <!--about section-->
+        <section id="about" class="about">
+            <h4 class="about__subtitle">Introduction</h4>
+            <h2 class="about__title">About me</h2>
+
+            <div class="about__content">
+                <div class="about__image-container" >
+                    <img src="./images/secondary_logo.png" alt="" class="about__image">
+                </div>
+            </div>
+            <div class="about__text">
+                <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="about__description">Currently working on: Improving my skills in, and understanding of vanilla JavaScript and React. Also, having fun with #100DaysOfCode building and animating things via CSS.</p>
+
+                <ul class="about__list">
+                    <li class="about__list-item">
+                        <img src="./images/code-icon.png" alt="Code icon" class="about__list-icon">
+                        <h3 class="about__list-title">Languages</h3>
+                        <p class="about__list-description">HTML, CSS, JavaScript, React Js, jQuery</p>
+                    </li>
+                    <li class="about__list-item">
+                        <img src="./images/edu-icon.png" alt="Education icon" class="about__list-icon">
+                        <h3 class="about__list-title">Education</h3>
+                        <p class="about__list-description">Front-End Web Development Certification UC San Diego and BS Biology San Diego State University</p>
+                    </li>
+                    <li class="about__list-item">
+                        <img src="./images/skills-icon.png" alt="Skills icon" class="about__list-icon">
+                        <h3 class="about__list-title">Skills</h3>
+                        <p class="about__list-description">Adaptability, Critical Thinking, Eager to Learn</p>
+                    </li>
+                </ul>
+                <h4 class="about__tools-title">Tools I use</h4>
+                <ul class="about__tools-list">
+                    <li class="about__tools-item">
+                        <img src="./images/vscode.png" alt="VS Code icon" class="about__tools-icon">
+                    </li>
+                    <li class="about__tools-item">
+                        <img src="./images/git.png" alt="Git icon" class="about__tools-icon">
+                    </li>
+                    <li class="about__tools-item">
+                        <img src="./images/github.png" alt="GitHub icon" class="about__tools-icon">
+                    </li>
+                    <li class="about__tools-item">
+                        <img src="./images/firebase.png" alt="Firebase icon" class="about__tools-icon">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--projects-->
+        <section id="projects" class="projects">
+            <h4 class="projects__subtitle">My Portfolio</h4>
+            <h2 class="projects__title">My latest work</h2>
+
+            <div class="projects__list">
+                <div class="projects__item">
+                    <div class="projects__laptop-mockup">
+                        <img src="./images/laptop.png" alt="">
+                        <div class="projects__laptop-mockup-screen">
+                            <img src="./images/library.jpg" alt="" class="projects__laptop-mockup-image">
+                        </div>
+                    </div>
+                    <div class="projects__details">
+                        <h4 class="projects__name">Little Library</h4>
+                        <p class="projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        
+                        <!--TODO: update href path to live git and github repo-->
+                        <div class="projects__actions">
+                            <a href="" class="button button--primary">live site
+                                <img src="./images/arrow_icon.png" alt="arrow icon" class="button-icon">
+                            </a>
+                            <a href="" class="button button--secondary">source code
+                                <img src="./images/code-icon.png" alt="code icon" class="button-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects__item">
+                    <div class="projects__phone-mockup">
+                        <img src="./images/phone.png" alt="">
+                        <div class="projects__phone-mockup-screen">
+                            <img src="./images/screencapture-loremipsum-io-2025-03-27-14_05_05.png" alt="" class="projects__phone-mockup-image">
+                        </div>
+                    </div>
+                    <div class="projects__details">
+                        <h4 class="projects__name">Dog Days</h4>
+                        <p class="projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                        <!--TODO: update href path to live git and github repo-->
+                        <div class="projects__actions">
+                            <a href="" class="button button--primary">live site
+                                <img src="./images/arrow_icon.png" alt="arrow icon" class="button-icon">
+                            </a>
+                            <a href="" class="button button--secondary">source code
+                                <img src="./images/code-icon.png" alt="code icon" class="button-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects__item">
+                    <div class="projects__phone-mockup">
+                        <img src="./images/phone.png" alt="">
+                        <div class="projects__phone-mockup-screen">
+                            <img src="./images/screencapture-loremipsum-io-2025-03-27-14_05_05.png" alt="" class="projects__phone-mockup-image">
+                        </div>
+                    </div>
+                    <div class="projects__details">
+                        <h4 class="projects__name">the kitchen</h4>
+                        <p class="projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                        <!--TODO: update href path to live git and github repo-->
+                        <div class="projects__actions">
+                            <a href="" class="button button--primary">live site
+                                <img src="./images/arrow_icon.png" alt="arrow icon" class="button-icon">
+                            </a>
+                            <a href="" class="button button--secondary">source code
+                                <img src="./images/code-icon.png" alt="code icon" class="button-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__more">
+                <!--TODO: update link to GitHub-->
+                <a href="" class="button button--primary">check out more projects 
+                    <img src="./images/arrow_icon.png" alt="arrow icon" class="button-icon">
+                </a>
+            </div>
+        </section>
+
+        <!--contact-->
+        <section id="contact" class="contact">
+            <h4 class="contact__subtitle">Connect with me</h4>
+            <h2 class="contact__title">Get in touch</h2>
+            <p class="contact__description">I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
+
+            <!--Web3Forms-->
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+
+                <input type="hidden" name="access_key" value="1e379ff9-f466-4827-8e4a-8e69485148c2">
+
+                <div class="contact__fields">
+                    <input type="text" name="name" placeholder="Enter your name" class="contact__input" required>
+                    
+                    <input type="email" name="email" placeholder="Enter your email" class="contact__input" required>
+                </div>
+                <div class="contact__message">
+                    <textarea name="message" rows="6" placeholder="Enter your message" class="contact__textarea" required></textarea>
+                </div>
+                <button type="submit" class="button button--primary contact__button">send now
+                    <img src="./images/arrow_icon.png" alt="arrow icon" class="button-icon">
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer__logo-container">
+            <img src="./images/secondary_logo.png" atl="logo" class="footer__logo">
+        </div>
+        <div class="footer__content">
+            <p class="footer__copyright">&copy; 2025 Shauna Raeside. All rights reserved.</p>
+            <ul class="footer__socials">
+                <!--TODO update linked to socials-->
+                <li class="footer__social-item"><a href="" class="footer__social-link">LinkedIn</a></li>
+                <li class="footer__social-item"><a href="" class="footer__social-link">GitHub</a></li>
+                <li class="footer__social-item"><a href="" class="footer__social-link">CodePen</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
