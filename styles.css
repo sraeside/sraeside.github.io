@@ -9,8 +9,7 @@
 :root {
     --font-family-primary: "Lato", sans-serif;
     --font-family-secondary: "Antic Didone", serif;
-    --color-hover: #007bff;
-    --color-secondary: #fcf4ff;
+    --color-hover: #fcf4ff;
     --color-dark: #333;
     --color-gray: #555;
 }
@@ -33,7 +32,7 @@
 }
 
 .button--primary {
-    background: linear-gradient(to right, #b820e6, #da7d20);
+    background: linear-gradient(to right, purple, rgb(114, 114, 239));
     color: white;
 }
 
@@ -133,7 +132,7 @@
     position: fixed;
     top: 0;
     right: -16rem;
-    background-color: #ffe4e6;
+    background-color: #fcf4ff;
     width: 16rem;
     height: 100vh;
     list-style: none;
@@ -206,7 +205,7 @@
     max-width: 32rem;
     margin: 0 auto;
     font-size: 1.25rem;
-    font-family: var(--font-family-secondary);
+    font-weight: 300;
 }
 
 .hero__actions {
@@ -261,7 +260,7 @@
 .about__description {
     margin-bottom: 2rem;
     font-size: 1rem;
-    font-family: var(--font-family-secondary);
+    font-weight: 300;
 }
 
 .about__list {
@@ -380,13 +379,14 @@
 
 .projects__name {
     font-size: 3rem;
-    font-family: var(--font-family-secondary);
+    font-weight: 400;
 }
 
 .projects__description {
     font-size: 1rem;
+    font-weight: 300;
     text-align: justify;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
 }
 
 .projects__actions {
@@ -480,8 +480,8 @@
     text-align: center;
     max-width: 40rem;
     margin: 2rem auto;
-    font-size: 1rem;;
-    font-family: var(--font-family-secondary);
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 .contact__form {
@@ -628,6 +628,10 @@
             padding: 1rem;
             margin-top: 3rem;
             margin-bottom: 4rem;
+        }
+
+        .projects__item:nth-child(2n) {
+            flex-direction: column;
         }
     
         .contact__fields {
