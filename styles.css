@@ -263,6 +263,10 @@
     font-weight: 300;
 }
 
+.about__description--strong {
+    font-weight: 400;
+}
+
 .about__list {
     list-style: none;
     display: grid;
@@ -408,7 +412,7 @@
     width: 600px;
     height: 379px;
     flex: 1;
-    position: relative;
+    position: relative;   
 }
 
 .projects__laptop-mockup-screen {
