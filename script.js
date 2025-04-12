@@ -12,7 +12,7 @@ function closeMenu() {
 }
 
 
-// header background scroll effect
+//header background scroll effect
 const headerNav = document.querySelector(".header__nav");
 const headerMenu = document.querySelector(".header__menu");
 
@@ -25,3 +25,8 @@ window.addEventListener("scroll", () => {
         headerMenu.classList.remove("header__menu--hidden");
     }
 });
+
+//reset contact form fields when the page loads
+window.onload = function () {
+    document.getElementById("form").reset();
+};
