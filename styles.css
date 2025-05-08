@@ -245,6 +245,7 @@
 .about__text {
     text-align: left;
     margin: auto;
+    max-width: 70ch;
 }
 
 .about__description {
@@ -389,6 +390,8 @@
     font-weight: 300;
     text-align: justify;
     line-height: 1.8rem;
+    max-width: 70ch;
+
 }
 
 .projects__actions {
